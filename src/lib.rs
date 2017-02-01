@@ -29,9 +29,9 @@ use std::io::Write;
 /// flushed.
 ///
 /// To reduce the number of write syscalls to the underlying stream when using `write!` or
-/// byte-based serialization, wrap the stream in a
-/// [`BufWriter`](https://doc.rust-lang.org/stable/std/io/struct.BufWriter.html) before
-/// passing it to this object, for example `ChunkedWrite::new(BufWriter::new(stream))`.
+/// byte-based serialization, wrap the object in a
+/// [`BufWriter`](https://doc.rust-lang.org/stable/std/io/struct.BufWriter.html), for
+/// example `BufWriter::new(ChunkedWrite::new(stream))`.
 pub struct ChunkedWrite<W: Write>(W);
 
 impl<W: Write> ChunkedWrite<W> {
