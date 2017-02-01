@@ -1,0 +1,9 @@
+[package]
+name = "uhttp_chunked_write"
+version = "0.5.0"
+authors = ["Mick Koch <mick@kochm.co>"]
+description = "HTTP chunked response writer"
+license = "MIT"
+documentation = "https://docs.rs/uhttp_chunked_write"
+repository = "https://github.com/kchmck/uhttp_chunked_write.rs"
+keywords = ["http", "response", "chunked", "writer"]
